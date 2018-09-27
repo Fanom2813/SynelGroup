@@ -1,0 +1,362 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background: #0f4850;
+    font: 1em/1.5  Lato, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+a {
+    color: #f06260;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 48px;
+    font-size: 3em;
+    font-family:  'Oleo Script Swash Caps', cursive;
+}
+
+h4 {
+    margin: 0;
+    font-size: 22px;
+    font-size: 1.375em;
+}
+
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+
+.inner-wrap {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================================
+   Page Heading
+   ========================================================================== */
+
+.page-header {
+    padding: 30px 0 170px;
+    background: #11545d;
+    text-align: center;
+}
+
+.name {
+    color: #dfc653;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 300;
+    font-size: 32px;
+    font-size: 2em;
+}
+
+.job-title{
+    margin: 0;
+    color: #f2e7b2;
+    font-weight: 500;
+    position: relative;
+}
+
+/* this is the thick line under the job title */
+    .job-title:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 140%;
+        margin-left: -30px;
+        width: 60px;
+        height: 6px;
+        background-color: #0f4850;
+    }
+
+.border {
+    margin: 20px auto;
+    width: 60px;
+    height: 6px;
+    background-color: #0f4850;
+}
+
+/* ==========================================================================
+   Introduction
+   ========================================================================== */
+
+.intro {
+    position: relative;
+    margin: -130px auto 0;
+    padding: 20px 0;
+    background-color: #2f2f2f;
+    text-align:center;
+}
+
+/* this is the folded corner */
+.intro:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 45px 45px 0;
+    border-style: solid;
+    border-color: #3d3d3d #11545d;
+    content: "";
+}
+
+.hello {
+    color: #8c8c8c;
+}
+
+.intro p {
+    margin-top: 0;
+    color: #e7e7e7;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.circle, .circle img {
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+}
+
+
+/* ==========================================================================
+   Work Samples
+   ========================================================================== */
+
+.work {
+    margin: 0 auto;
+    padding: 0 0 2em;
+    background-color: #ffffff;
+}
+
+.work h1 {
+    padding: 15px 5%;
+    background-color: #e0c552;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.work-samples li{
+    width: 90%;
+    margin: 1em auto;
+    list-style: none;
+}
+
+.work-samples p{
+    margin: 0 0 1em;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+.contact {
+    padding: 1em 5%;
+    background-color: #11545d;
+}
+
+.contact h1 {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 48px;
+    font-size: 3em;
+    font-family:  'Oleo Script Swash Caps', cursive;
+}
+
+form {
+    margin-top: 2em;
+}
+
+label {
+    margin: .5em 0;
+    color: #e0c552;
+    font-weight: 300;
+}
+
+input, textarea {
+    margin: .25em 0 1em;
+    width: 100%;
+    border: none;
+    background-color: #0f4850;
+}
+
+input {
+    height: 40px;
+}
+
+.submit {
+    clear: both;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #f1625f;
+    -webkit-box-shadow: 0px 4px 0px 0px #0f4850;
+    -moz-box-shadow:    0px 4px 0px 0px #0f4850;
+    box-shadow:         0px 4px 0px 0px #0f4850;
+    color: #ffffff;
+    color: #fff;
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    padding: 1em 0;
+    background-color: #2f2f2f;
+    color: #8c8c8c;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    font-weight: 300;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    display: table; /* 2 */
+    content: " "; /* 1 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ==========================================================================*/ 
+
+@media only screen and (min-width: 600px) {
+
+    .outer-wrap {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .name {
+        font-size: 3em;
+    }
+
+    .job-title {
+        font-size: 1.5em;
+    }
+
+    .work {
+        margin-bottom: 3em;
+    }
+
+    .work-samples{
+        padding: 0 2.5%;
+    }
+
+    .work-samples li{
+        width: 45%;
+        padding: 0 2.5%;
+        float: left;
+    }
+
+    .work-samples li:nth-of-type(odd) {
+        clear: left;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    .name {
+        font-size: 4em;
+    }
+
+    .headshot {
+        float: left;
+        width: 25%;
+    }
+
+    .hello, .sub {
+        float: right;
+        text-align: left;
+        width: 70%;
+        padding-left: 5%;
+    }
+
+    .intro p {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 4em;
+    }
+
+    .outer-wrap {
+        width: 80%;
+    }
+
+    .half {
+        width: 45%;
+        padding: 2.5%;
+        float: left;
+    }
+
+    form, .contact h1 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .submit {
+        width: 200px;
+        margin-left: 2.5%;
+    }
+
+}
+

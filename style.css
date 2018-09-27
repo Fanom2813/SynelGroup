@@ -1,0 +1,17 @@
+
+i.btnMenu{
+	display: none;
+
+}
+@media screen and (max-width:900px){
+    .menu{
+        display: none;
+    }
+    i.btnMenu{
+	display: ;
+
+}
+}
+
+
+
